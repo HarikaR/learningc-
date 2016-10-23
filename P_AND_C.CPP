@@ -1,7 +1,7 @@
 #include<iostream.h>
 #include<conio.h>
 #include<math.h>
-int unitsvalue(int number)
+int unitsvalue(long int number)
 {
 double returnValue = number % 10;
 return returnValue;
@@ -9,13 +9,14 @@ return returnValue;
 void main()
 {
 int count=0;
+long int m;
 clrscr();
 cout<<"\t permutations and combinations !\n";
 int alldigits[10]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-long int const maxm=100;//181440;
+long int const maxm=1000;//181440;
 long int number=0, s=0;
 
-for(int m=0;m<maxm;m++){
+for(m=0;m<maxm;m++){
 number = 0;
 for(int j=0;j<7;j++){
 s=unitsvalue(j+m+1);
