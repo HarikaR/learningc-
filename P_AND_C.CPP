@@ -8,12 +8,12 @@ return returnValue;
 }
 void main()
 {
-int count=0;
+long int count=0;
 long int m;
 clrscr();
 cout<<"\t permutations and combinations !\n";
 int alldigits[10]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-long int const maxm=1000;//181440;
+long int const maxm=9;
 long int number=0, s=0;
 
 for(m=0;m<maxm;m++){
